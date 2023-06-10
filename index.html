@@ -15,7 +15,7 @@
         height:400px;
         position: relative;
         background-color: yellow;
-        margin-top: 10px;
+
     }
     #myAnimation{
         background-color:red;
@@ -27,9 +27,10 @@
 
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
     <h1>Javascript Animation</h1>
-    <button onclick="myMove()">Click me</button>
+    <p><button onclick="myMove()">Click me</button>
+    </p>
     
         <div id="myContainer" >
       
@@ -38,7 +39,7 @@
             </div>
             
         </div>
-        </div>
+        <!-- </div> -->
         <script>
             //assign null value to id
               
@@ -46,7 +47,7 @@
             function myMove()
             {
               var elem=document.getElementById('myAnimation');
-              var position=0; 
+              var pos=0; 
               //reset timer to zero     
               clearInterval(id);
               //set timer
@@ -59,7 +60,7 @@
                 }
                 else{
                     pos=pos+1;
-                    elem.style.top=pos +"px"
+                    elem.style.top=pos + "px";
                 }
               }
                 
